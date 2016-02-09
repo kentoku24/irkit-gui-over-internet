@@ -28,6 +28,8 @@ def irkit(opt, ir_key, answer="")
   answer = "echo #{answer} | " if answer
   if @addr
     result = `#{answer} irkit --#{opt} "#{ir_key}" --address #{@addr}`
+  elsif @device_name
+    result = `#{answer} irkit --device #{@device_name} --#{opt} "#{ir_key}" `
   else
     result = `#{answer} irkit --#{opt} "#{ir_key}"`
   end
@@ -37,6 +39,7 @@ end
 def load_settings
   @addr = settings.IRKIT_ADDRESS
   @data_file_dir = settings.IRKIT_DATA_DIR || ENV['HOME']
+  @device_name = settings.DEVICE_NAME
 rescue
 end
 
