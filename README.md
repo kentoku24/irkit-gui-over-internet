@@ -53,3 +53,4 @@ IRKIT_DATA_DIR: /path/to/dir
     - 登録した赤外線信号のデータファイルのありか
         - RubyGem "irkit" が管理している
         - デフォルトはホームディレクトリ
+# irkit-gui-over-internet
