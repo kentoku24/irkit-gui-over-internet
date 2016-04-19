@@ -4,5 +4,7 @@ gem "sinatra"
 gem "sinatra-contrib"
 gem "slim"
 gem "unicorn"
-
+gem "aws-sdk-core"
+gem "aws-sdk"
 gem "irkit"
+gem "logger"
