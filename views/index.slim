@@ -30,6 +30,13 @@ css:
     font-size: 24px;
     color: #ccc;
   }
+  .switches .glyphicon2 {
+    left: 10px;
+    top: 10px;
+    position: absolute;
+    font-size: 24px;
+    color: #ddd;
+  }
   #saveform {
     margin-top: 10px;
   }
@@ -53,6 +60,11 @@ h1.text-center
 p.addr.text-center = addr
 
 div.switches.well
+  - @sequence_keys.each do |key|
+    button id="#{key}" type="button" class="btn btn-success btn-lg btn-block"
+      span.glyphicon.glyphicon-play-circle
+      = key
+
   - @irkit_keys.each do |key|
     button id="#{key}" type="button" class="btn btn-primary btn-lg btn-block"
       span.glyphicon.glyphicon-play-circle
