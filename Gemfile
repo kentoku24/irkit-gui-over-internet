@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
-gem "sinatra"
-gem "sinatra-contrib"
+gem "sinatra", ">= 2.0.2"
+gem "sinatra-contrib", ">= 2.0.2"
 gem "slim"
 gem "unicorn"
 gem "aws-sdk-core"
