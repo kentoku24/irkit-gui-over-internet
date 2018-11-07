@@ -1,9 +1,9 @@
 source "https://rubygems.org"
 
-gem "sinatra"
-gem "sinatra-contrib"
+gem "sinatra", ">= 1.4.6"
+gem "sinatra-contrib", ">= 1.4.6"
 gem "slim"
-gem "unicorn"
+gem "unicorn", ">= 5.0.1"
 gem "aws-sdk-core"
 gem "aws-sdk"
 gem "irkit"
